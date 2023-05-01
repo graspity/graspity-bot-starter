@@ -70,6 +70,8 @@ def processPageAndReply(ws, channelId, originalMessage, page):
         if msg["author"] != userId:
             plainText = msg["authorDisplayName"] + ": " + msg["data"] + "\n\n" + plainText
 
+    # TODO - put you logic here
+
     replyText = "Hello [@" + originalMessage["authorDisplayName"] + "](mn:" + originalMessage["author"] + ")" + "\n\n"
     replyText += "Here the text I've processed: \n\n" \
                  "```\n" + \
