@@ -18,3 +18,7 @@ Put your code in the `processPageAndReply` method in `bot.py` file
 ```python
 def processPageAndReply(ws, channelId, originalMessage, page)
 ```
+
+## Important
+
+Please make sure that bot filters its own message in order not to get into a loop. Or it will be throttled.
